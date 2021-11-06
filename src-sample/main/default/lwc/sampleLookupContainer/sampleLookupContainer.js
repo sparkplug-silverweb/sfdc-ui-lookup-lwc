@@ -16,7 +16,7 @@ export default class SampleLookupContainer extends LightningElement {
             id: 'na',
             sObjectType: 'na',
             icon: 'standard:lightning_component',
-            title: 'Inital selection',
+            title: 'Initial selection',
             subtitle: 'Not a valid record'
         }
     ];
