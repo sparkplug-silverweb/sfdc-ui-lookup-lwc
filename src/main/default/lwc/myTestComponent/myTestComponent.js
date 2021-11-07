@@ -1,13 +1,10 @@
-import { LightningElement,api } from 'lwc';
+import { LightningElement} from 'lwc';
 
 export default class MyTestComponent extends LightningElement {
-    @api
-    propertyOne;
-
-
+    
     handleChange(event){
-        this.propertyOne=event.detail.value;
-        this.dispatchEvent(new CustomEvent('change',{detail:this.propertyOne}));
+        
+        this.dispatchEvent(new CustomEvent('change',{detail:event.detail.value}));
 
     }
 }

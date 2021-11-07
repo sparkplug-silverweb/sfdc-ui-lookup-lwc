@@ -1,10 +1,10 @@
 import { LightningElement } from 'lwc';
 
 export default class MyParentComponent extends LightningElement {
-    propertyOne;
+    name='World';
     
     handlePropertyOne(event){
         
-        this.propertyOne = event.detail.value;
+        this.name = event.detail.value;
     }
 }
